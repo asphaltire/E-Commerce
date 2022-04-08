@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* border:solid; */
+    text-decoration: none;
+    font-size:10px;
+}
+.header{
+    position:fixed;
+    z-index: 2;
+    width:100%;
+    background-color: rgb(250, 125, 7);
+}
+.navbar-brand{
+    font-size:medium;
+}
+.nav-link{
+    color:rgb(4, 18, 54);
+    font-weight: 500;
+}
+.searchbar{
+    border:solid rgb(4, 18, 54);
+    border-radius: 8px;
+    border-width: 2px;
+}
+.search{
+    border: solid rgb(4, 18, 54);
+    border-radius: 5px;
+    border-width: 1px;
+    color:rgb(4, 18, 54);
+    background-color: white;
+}
+.d-flex{
+    width:50%;
+}
+.scrolling-wrapper{
+    padding-top:17%;
+}
+.card{
+    width:4.4rem;
+    cursor: pointer;
+    
+}
+.card-title{
+    display:none;
+}
+.swimg{
+    height:9rem !important;
+}
+.caraouselimage{
+    height:20rem;
+}
+.items{
+    margin-top:5%;
+    margin-bottom:5%;
+    padding-left: 4%;
+}
+.items .card{
+    margin-right:2%;
+    margin-bottom: 2%;
+}
+.card-img-top{
+    height: 13rem;
+}
+.footer{
+    /* position: sticky; */
+    /* top:100%; */
+    /* bottom:0; */
+    border:solid;
+    background-color:rgb(4, 18, 54);
+    color:white;
+    padding-top: 2%;
+    border:solid rgb(4, 18, 54);
+}
+
+.footercols{
+    display:grid;
+    justify-items:left;
+    border-right: solid black;
+    border-width: 1px;
+    padding-left: 3%;
+}
+.headings{
+    color:gray;
+}
+@media screen and (min-width:992px) {
+   .nav{
+        /* border:solid green; */
+        margin-left:82%;
+    }
+    .nav-link{
+        font-size:1.6rem;
+    }
+    .search{
+        font-size:1.6rem;
+       
+    }
+    .d-flex{
+        /* border:solid; */
+        width:57%;
+    }
+    .scrolling-wrapper {
+        overflow-x:hidden; 
+        padding-top:5%;
+        
+      }
+      .card{
+        width: 10rem;
+        text-align: center;
+        
+     }
+     .card-title{
+         display: block;
+         font-size:1.5rem;
+         
+     }
+     .caraouselimage{
+         height:50rem;
+     }
+    
+     .headings{
+         font-size: 2.5rem;
+     }
+     .footercontent{
+         font-size:1.5rem;
+     }
+}
