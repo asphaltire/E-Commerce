@@ -1,128 +1,325 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     /* border:solid; */
     text-decoration: none;
-    font-size:10px;
+    font-size: 10px;
 }
-.header{
+
+.header {
     position:fixed;
+    top: 0;
     z-index: 2;
-    width:100%;
+    width: 100%;
     background-color: rgb(250, 125, 7);
 }
-.navbar-brand{
-    font-size:medium;
+
+.navbar-brand {
+    font-size: medium;
 }
-.nav-link{
-    color:rgb(4, 18, 54);
+
+.nav-link {
+    color: rgb(4, 18, 54);
     font-weight: 500;
 }
-.searchbar{
-    border:solid rgb(4, 18, 54);
+
+.searchbar {
+    border: solid rgb(4, 18, 54);
     border-radius: 8px;
     border-width: 2px;
 }
-.search{
+
+.search {
     border: solid rgb(4, 18, 54);
     border-radius: 5px;
     border-width: 1px;
-    color:rgb(4, 18, 54);
+    color: rgb(4, 18, 54);
     background-color: white;
 }
-.d-flex{
-    width:50%;
-}
-.scrolling-wrapper{
-    padding-top:17%;
-}
-.card{
-    width:4.4rem;
-    cursor: pointer;
-    
-}
-.card-title{
-    display:none;
-}
-.swimg{
-    height:9rem !important;
-}
-.caraouselimage{
-    height:20rem;
-}
-.items{
-    margin-top:5%;
-    margin-bottom:5%;
-    padding-left: 4%;
-}
-.items .card{
-    margin-right:2%;
-    margin-bottom: 2%;
-}
-.card-img-top{
-    height: 13rem;
-}
-.footer{
-    /* position: sticky; */
-    /* top:100%; */
-    /* bottom:0; */
-    border:solid;
-    background-color:rgb(4, 18, 54);
-    color:white;
-    padding-top: 2%;
-    border:solid rgb(4, 18, 54);
+
+.d-flex {
+    width: 50%;
 }
 
-.footercols{
-    display:grid;
-    justify-items:left;
+.scrolling-wrapper {
+    padding-top: 17%;
+}
+
+.card {
+    width: 4.4rem;
+    cursor: pointer;
+    border: none;
+
+}
+
+.card-title {
+    display: none;
+}
+
+.swimg {
+    height: 9rem !important;
+}
+
+.caraouselimage {
+    height: 20rem;
+}
+
+.items {
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-left: 7%;
+}
+
+.items .card {
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border: none;
+
+}
+
+.card-img-top {
+    height: 13rem;
+}
+
+.footer {
+    position:relative;
+    top:100%;
+    bottom: 0;
+    border: solid;
+    background-color: rgb(4, 18, 54);
+    color: white;
+    padding-top: 2%;
+    border: solid rgb(4, 18, 54);
+}
+
+.footercols {
+    display: grid;
+    justify-items: left;
     border-right: solid black;
     border-width: 1px;
     padding-left: 3%;
 }
-.headings{
-    color:gray;
+
+.headings {
+    color: gray;
 }
+
+/* contact page css */
+.contactpage {
+    margin-top: 40%;
+    margin-bottom: 20%;
+    width:80%;
+    margin-left:7%;
+}
+
+.font-weight-bold {
+    font-size: 2.2rem;
+}
+
+.contactform {
+    border: solid 1px rgba(123, 124, 122, .22);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.details{
+    margin-bottom:14%;
+}
+.icon {
+    height: 50px;
+}
+
+#mail {
+    height: 45px;
+}
+
+.desc {
+
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+.divider {
+    display: none;
+}
+
+.contactform .form-control {
+    box-shadow: 0 2px 6px 0 rgba(123, 124, 122, .15), 0 13px 12px -11px rgba(180, 181, 176, .32) !important;
+    margin-bottom:2%;
+}
+
+.icon {
+    height: 20%;
+    width: 20%;
+}
+
+.desc {
+    width: 70%;
+}
+
+.contactform {
+    margin: 10px 10px 10px 10px;
+    padding:3%;
+}
+/* contact form end */
+/* about us */
+.about{
+    margin-top: 20%;
+    text-align:center;
+   
+}
+.about h1{
+    color:rgb(4, 18, 54);
+}
+.about p{
+    font-size: 1.5rem;
+}
+/* about us end */
+/* signup */
+.signup{
+    margin-top:40%;
+    margin-bottom: 35%;
+}
+.signup .form-control{
+    box-shadow: 0 2px 6px 0 rgba(123, 124, 122, .15), 0 13px 12px -11px rgba(180, 181, 176, .32) !important;
+}
+.signupform{
+    border:solid rgb(4, 18, 54);
+    border-radius:12px;
+}
+  /* login */
+  .login{
+      margin-top:70%;
+      margin-bottom: 60%;
+  }
 @media screen and (min-width:992px) {
-   .nav{
+    .nav {
         /* border:solid green; */
-        margin-left:82%;
+        margin-left: 50%;
     }
-    .nav-link{
-        font-size:1.6rem;
+
+    .nav-link {
+        font-size: 1.6rem;
     }
-    .search{
-        font-size:1.6rem;
-       
+
+    .search {
+        font-size: 1.6rem;
+
     }
-    .d-flex{
+
+    .d-flex {
         /* border:solid; */
-        width:57%;
+        width: 57%;
     }
+
     .scrolling-wrapper {
-        overflow-x:hidden; 
-        padding-top:5%;
-        
-      }
-      .card{
+        overflow-x: hidden;
+        padding-top: 5%;
+
+    }
+
+    .card {
         width: 10rem;
         text-align: center;
-        
-     }
-     .card-title{
-         display: block;
-         font-size:1.5rem;
-         
-     }
-     .caraouselimage{
-         height:50rem;
-     }
+
+    }
+
+    .card-title {
+        display: block;
+        font-size: 1.5rem;
+
+    }
+
+    .caraouselimage {
+        height: 50rem;
+    }
+
+    .items {
+        padding-left: 5%;
+    }
+
+    .headings {
+        font-size: 2.5rem;
+    }
+
+    .footercontent {
+        font-size: 1.5rem;
+    }
+
+    /* contactpage */
+   
+    .contactpage {
+        margin-top: 10%;
+        margin-bottom: 8%;
+        /* border:solid; */
+    }
+    .contactform{
+        width:45%;
+        padding:1.5%;
+        border-radius: 5%;
+    }
+    #emailHelp{
+        font-size: 1.2rem;
+    }
+    .contactform .form-control{
+        border-radius: 4%;
+        height:40px;
+        margin-bottom:2%;
+    }
+   .contactform .form-control::placeholder{
+        font-size:2rem;
+    }
+    .divider {
+        display: block;
+        border-left: solid;
+        width: 5%;
+    }
+    .details{
+        margin-bottom:0%;
+    }
+    .desc{
+        margin-left:5%;
+    }
+    .fs{
+        font-size: 1.8rem;
+    }
+    .font-weight-bold {
+        font-size: 3.4rem;
+        margin-bottom:5%;
+    }
+    /* contact end */
+    /* about us */
+   
+.about{
     
-     .headings{
-         font-size: 2.5rem;
-     }
-     .footercontent{
-         font-size:1.5rem;
-     }
+    margin-top: 10%;
+    text-align:center;
+    margin-bottom: 10%;
+   
+}
+/* SIGNUP */
+.signup{
+    margin-top:12%;
+    margin-bottom: 14%;
+    width:40%;
+}
+.signup h1{
+    text-align: center;
+    margin-bottom: 4%;
+    
+}
+.signup form div label{
+    font-size: 1.5rem;
+}
+.signup .form-control{
+    height:40px;
+}
+#validationCustom02{
+    width:94%;
+}
+/* login */
+
 }
